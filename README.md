@@ -1,7 +1,7 @@
 # Gaza SG Task 2 - Product List vanilla js
 
 ## Description
-This is a React application that showcases a filterable product list. Users can easily filter products by category and search for specific products based on their name or price. Each product card displays essential information such as the product name, category, price, rating, availability, and a detailed description.
+This is a vanilla js application that showcases a filterable product list. Users can easily filter products by category and search for specific products based on their name or price. Each product card displays essential information such as the product name, category, price, rating, availability, and a detailed description.
 
 ## Features
 - Filter products by categories: All, Electronics, Clothing, and Toys.
