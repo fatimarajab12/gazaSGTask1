@@ -1,0 +1,223 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #218838;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filter-section button {
+    background-color:#28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Product display styling with enhanced layout */
+.product-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Add space for the product image */
+/* Enhanced product card styling */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sale Label */
+.sale-label {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+/* Rating Stars */
+.rating {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.rating i {
+    color: #f8c34a;
+    margin-right: 3px;
+}
+
+/* Wishlist Icon */
+.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ff4d4d;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.wishlist:hover {
+    color: #e60000;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Stock Availability */
+.stock {
+    font-size: 1rem;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.out-of-stock {
+    color: red;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+}
+.footer {
+    background-color: #218838; /* Dark Green Background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+  
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text for links */
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #a5d6a7; /* Lighter green on hover */
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+}

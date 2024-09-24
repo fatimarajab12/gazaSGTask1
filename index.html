@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Product List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Product List</h1>
+    </header>
+
+    <section class="filter-section">
+        <button data-category="All">All</button>
+        <button data-category="Electronics">Electronics</button>
+        <button data-category="Clothing">Clothing</button>
+        <button data-category="Toys">Toys</button>
+        <input type="text" id="search-input" placeholder="Search by name or price">
+    </section>
+
+    <section id="product-list" class="product-display">
+        <!-- Products will be dynamically injected here -->
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>About Us</h4>
+                <p>We provide the best products in Electronics, Clothing, and Toys. Shop with us for quality and great customer service.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024  | All Rights Reserved
+        </div>
+    </footer>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
